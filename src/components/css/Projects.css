@@ -1,0 +1,101 @@
+.card-container{
+    margin: 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+ 
+}
+
+
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 400px;
+    margin: 20px 20px;
+    /* overflow: hidden; */
+    position: relative;
+    top: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover{
+    transform: translateY(-5px);
+  }
+
+.content{
+  position: absolute;
+    top:10px;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    /* padding: 20px; */
+    right: 20px;
+    text-align: center;
+   margin-top: 220px;
+   background: #ffffff6c;
+   height: 100px;
+   color: #041119;
+   width: 400px;
+}
+
+  .project-card:hover .content{
+    transform: translateY(-5px);
+   bottom: 20px;
+   opacity: 1;
+  }
+
+ .content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .content a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .content a:hover {
+    text-decoration: underline;
+  }
+
+  .lable {
+    padding: 0px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+}
+
+.head {
+    /* display: inline-block; */
+    padding: 0px 12px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 20px;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    font-size: 15px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .lable,.head{
+      margin-left: 20%;
+    }
+    
+  }

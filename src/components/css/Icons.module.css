@@ -1,0 +1,17 @@
+.icon_Container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: 40px;
+   
+
+}
+
+.link{
+    color:#eaeaea;
+    font-size: 20px; 
+  
+}
+.link:hover{
+    color:  #4b5157c8;
+}

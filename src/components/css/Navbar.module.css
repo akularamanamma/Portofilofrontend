@@ -1,0 +1,76 @@
+.navbar{
+height:50px;
+width: 100%;
+/* border:1px solid red; */
+margin-top:-5px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 5px 8px;
+background-color:  #0016257e;
+list-style: none;
+position: fixed;
+}
+
+.link{
+    color: #f7f7f7;
+    font-family: monospace;
+    font-size:1.2em;
+}
+.li{
+    margin-left: 300px;
+}
+
+.link:hover{
+    color: #44444594;
+    border-bottom: 2px solid #434344;
+}
+
+#about, #education, #skill, #contact {
+    border-bottom: 2px solid #292e34;
+}
+
+.icon {
+    height: 20px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: rgb(3, 17, 39);
+    position: fixed;
+  
+    
+}
+
+    @media only screen and (max-width: 768px) {
+        .l1 {
+            margin-left: 0;
+        }
+    
+        .nv {
+            height: 30px;
+            position: fixed;
+            
+        }
+    
+        .navbar {
+            border-radius: 5px;
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+            background-color: #02131e89;
+            height: 20px;
+            position: static;
+            margin: 30px 10px;
+        }
+    
+        .link {
+            margin: auto;
+            width: 100%;
+            font-size: 12px;
+            color: rgba(244, 244, 244, 0.756);
+        }
+        .link:hover {
+            border-bottom: none;
+            color: #a9a9bdbd;
+        }
+    }
