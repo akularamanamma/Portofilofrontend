@@ -1,9 +1,10 @@
 import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
-import {Link as DomLink} from 'react-router-dom'
+// import Link from 'react-router-dom'
 import {Link} from 'react-scroll'
 import './css/Slide.css'
 import Icons from './Icons'
+
 function Slide({showlist}) {
   return (
    <>
@@ -28,7 +29,7 @@ function Slide({showlist}) {
     />
     </div>
     <div className='button-sec'>
-      <DomLink to='https://drive.google.com/file/d/1lZhAUap3ZZx075Ijj3WvWDjx_TcqeUjN/view?usp=drivesdk' className='link'>Resume</DomLink>
+      <a href='https://drive.google.com/file/d/1iI0amFvxFUDPcVLwbifHgzqD6R2oChCH/view?usp=drivesdk' target="_blank" rel="noopener noreferrer" className='link'>Resume</a>
       <Link to='contact' className='link'>Contact</Link>
     </div>
     <div className='icon'>
