@@ -1,37 +1,37 @@
 .about {
-    /* background: linear-gradient(90deg,#06a4ff69,#eaeaea,#3983b2); */
     background: #bbc6cd2e;
-    padding: 20px 20px;
+    padding: 20px;
     margin: 40px 35px;
-    /* box-shadow: 5px 5px 5px #505d659b; */
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds space between image and text */
 }
 
-.about img{
+/* About Section Image */
+.about img {
     height: 250px;
     width: 250px;
+    border-radius: 10px; /* Optional: rounded corners */
+    object-fit: cover; /* Ensures proper aspect ratio */
 }
 
-.about-head h1{
-   text-transform: uppercase;
-   color: #041119;
-   padding: 0px 12px;
-   font-size: 20px;
-   font-weight: 700;
-   margin-left: 30px;
-   text-transform: uppercase;
-   letter-spacing: 5px;
-   line-height: 1.8;
-   text-align: center;
+/* Heading Styling */
+.about-head h1 {
+    text-transform: uppercase;
+    color: #041119;
+    padding: 0px 12px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    text-align: center;
 }
 
-.about-in {
-    transform: translateX(0);
-}
-
-.about-head p{
-    padding: 20px 20px;
-    /* font-size: 1.2rem; */
+/* Paragraph Styling */
+.about-head p {
+    padding: 20px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 500;
@@ -40,25 +40,41 @@
     color: #041119;
 }
 
-body {
-    background: #f1f1f1;
-}
-
+/* Bold Span */
 .sp {
     font-weight: bold;
 }
 
-/* Media Queries for responsiveness */
+/* Background Color */
+body {
+    background: #f1f1f1;
+}
+
+/* ✅ Mobile Responsive Design */
 @media only screen and (max-width: 768px) {
-    .about p {
-        padding: 20px 20px;
-        /* font-size: 1.2rem; */
+    .about {
+        flex-direction: column; /* Stack image and text */
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .about img {
+        height: 180px;
+        width: 180px;
+        margin-bottom: 15px; /* Space between image and text */
+    }
+
+    .about-head h1 {
+        font-size: 18px;
+        margin-left: 0;
+        letter-spacing: 3px;
+    }
+
+    .about-head p {
         font-size: 16px;
-        /* line-height: 25px; */
-        text-align: justify;
-        font-weight: 500;
-        letter-spacing: 0.1px;
-        font-family: 'Quicksand', Arial, sans-serif;
-        color: #041119;
+        line-height: 25px;
+        padding: 15px;
     }
 }
