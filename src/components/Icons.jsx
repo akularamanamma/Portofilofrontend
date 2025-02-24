@@ -8,15 +8,16 @@ import icons from './css/Icons.module.css'
 function Icons() {
   return (
     <div className={icons.icon_Container}>
-        <Link to='https://www.linkedin.com/in/akularama/' className={icons.link}>
+        {/* <Link to='https://www.linkedin.com/in/akularama' > */}
+        <a href="https://www.linkedin.com/in/akularama" target="_blank" rel="noopener noreferrer" className={icons.link}>
         <FontAwesomeIcon icon={faLinkedin}/>
-        </Link>
-        <Link to='mailto:akulalakshmi1100@gmail.com' className={icons.link}>
+        </a>
+        <a href='mailto:akulalakshmi1100@gmail.com' target="_blank" rel="noopener noreferrer" className={icons.link}>
         <FontAwesomeIcon icon={faEnvelope}/>
-        </Link>
-        <Link to='https://www.github.com/akularamanamma' className={icons.link}>
+        </a>
+        <a href='https://www.github.com/akularamanamma' target="_blank" rel="noopener noreferrer" className={icons.link}>
         <FontAwesomeIcon icon={faGithub}/>
-        </Link>
+        </a>
         
         </div>
         
