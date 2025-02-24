@@ -5,7 +5,7 @@ import './css/Projects.css'
 let projectDetails=[
   {title:'Personal Portfolio',
     description:'Portfolio website developed with React.',
-    link:'https://impana-b-portfolio.netlify.app/',image:pimg}
+    link:'https://roaring-puffpuff-d95b07.netlify.app/',image:pimg}
 ]
 
 
