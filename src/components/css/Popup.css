@@ -1,53 +1,69 @@
-.popup-overlay{
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background-color: rgba(0, 0, 0, 0.5);
- display: flex;
- justify-content: center;
- align-items: center;   
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Added for better spacing */
 }
 
 .popup,
-.alert{
-    background-color: rgba(231, 251, 158, 0.889);
-  padding: 10px;
-  border-radius: 4px;
+.alert {
+  background-color: rgba(231, 251, 158, 0.889);
+  padding: 15px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 30%;
-  height: 50px;
+  width: 90%;
+  max-width: 400px; /* Ensures proper sizing on larger screens */
+  height: auto;
   text-align: center;
-  margin-top: 0;
 }
 
 .alert {
-    background-color: rgba(251, 79, 26, 0.877);
+  background-color: rgba(251, 79, 26, 0.877);
+}
+
+.popup h5,
+.alert h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.popup h5 {
+  color: rgb(6, 4, 4);
+}
+
+.btn {
+  border: none;
+  background: #03061569;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .popup,
+  .alert {
+    width: 95%;
+    max-width: 320px;
+    padding: 10px;
   }
+
   .popup h5,
   .alert h5 {
-    margin-top: 0;
-    font-size: 10px;
-  }
-  
-  .popup h5 {
-    color: rgb(6, 4, 4);
+    font-size: 12px;
   }
 
   .btn {
-    border: none;
-    background: #03061569;
-    color: white;
-    height: auto;
-    width: auto;
     font-size: 10px;
-    margin-top: -25px;
+    padding: 6px 10px;
   }
-
-  @media only screen and (max-width: 768px) {
-    .popup {
-        width: 35%;
-        height: 50px;
-    }
-  }
+}
