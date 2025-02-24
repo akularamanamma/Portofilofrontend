@@ -1,17 +1,44 @@
-.icon_Container{
+.icon_Container {
     display: flex;
-    justify-content: space-evenly;
-    width: 200px;
-    margin: 40px;
-   
-
+    justify-content: center; /* Centers icons */
+    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+    gap: 20px; /* Adds spacing between icons */
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto; /* Centers the container */
 }
 
-.link{
-    color:#eaeaea;
-    font-size: 20px; 
-  
+/* Icon link styling */
+.link {
+    color: #eaeaea;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
 }
-.link:hover{
-    color:  #4b5157c8;
+
+.link:hover {
+    color: #4b5157c8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .icon_Container {
+        gap: 15px; /* Reduce spacing for tablets */
+        max-width: 250px;
+    }
+
+    .link {
+        font-size: 18px; /* Slightly smaller for tablets */
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .icon_Container {
+        gap: 10px; /* Further reduce spacing */
+        max-width: 200px;
+    }
+
+    .link {
+        font-size: 16px; /* Smaller font size for better mobile fit */
+    }
 }
