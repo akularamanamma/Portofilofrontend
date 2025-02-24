@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAward} from '@fortawesome/free-solid-svg-icons'
 import './css/Education.css'
+
 let education=[
   {
     yop:'2020-2023',
@@ -36,7 +37,7 @@ function Education() {
            <h4>{ele.degree}</h4>
            <p>{ele.clg}</p>
            </div>
-           <div>{ele.yop}</div>
+           <div className='year'><h5>{ele.yop}</h5></div>
           </section>
         })
       }
