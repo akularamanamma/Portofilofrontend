@@ -1,101 +1,136 @@
-.card-container{
-    margin: 30px 30px;
+.card-container {
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 20px;
- 
+   padding: 10px;
 }
-
-
 
 .project-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    height: 300px;
-    width: 400px;
-    margin: 20px 20px;
-    /* overflow: hidden; */
-    position: relative;
-    top: 0;
-    transition: transform 0.3s ease;
-  }
-
-  .project-card:hover{
-    transform: translateY(-5px);
-  }
-
-.content{
-  position: absolute;
-    top:10px;
-    bottom: 0;
-    left: 30px;
-    opacity: 0;
-    /* padding: 20px; */
-    right: 20px;
-    text-align: center;
-   margin-top: 220px;
-   background: #ffffff6c;
-   height: 100px;
-   color: #041119;
-   width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  height: auto; /* Allows cards to adjust to content */
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
-  .project-card:hover .content{
-    transform: translateY(-5px);
-   bottom: 20px;
-   opacity: 1;
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  height: auto;
+  color: #041119;
+  padding: 15px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .content {
+  opacity: 1;
+}
+
+.content h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.content a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.head{
+  color: #555;
+}
+
+.lable, .head {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  padding:0px 50px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Makes cards take full width on smaller screens */
+    max-width: 95%;
   }
 
- .content h2 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+  .content {
+    height: auto;
+    padding: 10px;
+  }
+
+  .content h2 {
+    font-size: 0.9rem;
   }
 
   .content p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    font-size: 0.8rem;
   }
 
   .content a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    display: inline-block;
+    font-size: 0.8rem;
   }
 
-  .content a:hover {
-    text-decoration: underline;
+  .lable, .head {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 0px 30px;
   }
-
-  .lable {
-    padding: 0px 12px;
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 30px;
-    margin-top: 0px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 1.8;
 }
 
-.head {
-    /* display: inline-block; */
-    padding: 0px 12px;
-    color: rgb(85, 85, 85);
-    margin-bottom: 20px;
-    margin-left: 30px;
-    letter-spacing: 5px;
-    font-size: 15px;
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+  .project-card {
+    padding: 15px;
   }
 
-  @media only screen and (max-width: 768px) {
-    .lable,.head{
-      margin-left: 20%;
-    }
-    
+  .content {
+    padding: 8px;
   }
+
+  .content h2 {
+    font-size: 0.85rem;
+  }
+
+  .content p {
+    font-size: 0.75rem;
+  }
+
+  .content a {
+    font-size: 0.75rem;
+  }
+
+  .lable, .head {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding:0px 30px;
+  }
+}
