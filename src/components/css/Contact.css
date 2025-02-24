@@ -1,48 +1,42 @@
-.contact-sec{
+/* Contact Section */
+.contact-sec {
     display: flex;
     background-color: #030615;
     min-height: 100vh;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     flex-direction: column;
-    min-width: 100vw;
-    padding: 40px;
+    width: 100%; /* Full width */
+    padding: 40px 20px;
 }
 
-form{
-    margin: 30px;
+/* Form Styling */
+form {
+    margin: 30px 0;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     flex-direction: column;
     display: flex;
     border: 2px solid whitesmoke;
-    height: auto;
-    width: 80%;
+    width: 90%;
     max-width: 500px;
     padding: 20px;
     background-color: #030615;
-    box-sizing: 10px;
+    box-sizing: border-box;
 }
 
-input{
-   border-radius: 10px;
-   padding: 10px 20px;
-   width: 100%;
-   margin: 10px 0;
-   box-sizing: border-box;
-  
-}
-
-
-textarea{
+/* Input Fields */
+input, textarea {
     border-radius: 10px;
     padding: 10px 20px;
     width: 100%;
     margin: 10px 0;
     box-sizing: border-box;
- }
+    /* font-size: 16px; */
+}
 
-button{
+/* Button Styling */
+button {
     height: 50px;
     width: 50%;
     max-width: 200px;
@@ -51,9 +45,16 @@ button{
     font-weight: bold;
     background-color: rgba(9, 208, 9, 0.99);
     border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
-.heading{
+button:hover {
+    background-color: rgba(5, 180, 5, 0.99);
+}
+
+/* Contact Heading */
+.heading {
     color: #ecf8ff;
     font-size: 26px;
     font-weight: 700;
@@ -61,11 +62,33 @@ button{
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 1.5;
-    margin: 50px;
+    margin: 30px;
 }
 
+/* ✅ Mobile Responsive Design */
 @media only screen and (max-width: 768px) {
+    .contact-sec {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
     .heading {
-        font-size: 20px;
+        font-size: 22px;
+        margin: 20px;
+        letter-spacing: 2px;
+    }
+
+    button {
+        width: 80%;
+        max-width: 180px;
     }
 }
